@@ -37,7 +37,7 @@ const Hero = () => {
           </p>
 
           {/* Subheading */}
-          <p className="mt-8 text-l md:text-2xl max-w-3xl mx-auto -mt-[-250px] leading-relaxed pt-8">
+          <p className="mt-8 text-l md:text-2xl max-w-3xl mx-auto -mt-[-240px] leading-relaxed pt-8">
             Solving navigation for drones in GPS-denied environments,
             <br className="hidden md:block" />
             developing an affordable, light, plug-and-play module with AI.
