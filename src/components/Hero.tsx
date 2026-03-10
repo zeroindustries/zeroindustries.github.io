@@ -31,7 +31,7 @@ const Hero = () => {
           />
 
           {/* Slogan */}
-          <p className="text-2xl italic -mt-4 md:-mt-[60px]">
+          <p className="text-2xl italic -mt-4 md:-mt-[40px]">
             Smarter systems.
             <br className="md:hidden" /> Stronger defence.
           </p>
