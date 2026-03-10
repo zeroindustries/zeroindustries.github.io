@@ -4,14 +4,16 @@ import ZeroLogo from "../../public/Zero_Logo.svg";
 
 const Hero = () => {
   return (
-    <section className="relative bg-gradient-to-b from-background to-secondary/10 overflow-hidden">
+    <section className="relative bg-gradient-to-b from-background to-secondary/10 overflow-hidden min-h-fit md:aspect-auto">
       {/* Background Video */}
       <video
-        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+        className="absolute top-0 left-0 w-full md:h-full object-contain md:object-cover z-0 aspect-video md:aspect-auto mt-[250px] md:mt-0"
         autoPlay
         loop
         muted
         playsInline
+        disablePictureInPicture
+        style={{ pointerEvents: "none" }}
       >
         <source src="/ZERO_TEST_FLIGHT_EDITv4_trimmed.mp4" type="video/mp4" />
         Your browser does not support the video tag.
@@ -23,6 +25,7 @@ const Hero = () => {
       {/* Content */}
       <div className="container relative z-20 mx-auto px-4">
         <div className="flex flex-col items-center min-h-screen text-center pt-20 text-white">
+
           {/* Logo */}
           <img
             src={ZeroLogo}
@@ -44,10 +47,10 @@ const Hero = () => {
           </p>
 
           {/* Feature highlights */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-[20px] max-w-4xl mx-auto">
-            
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-[20px] max-w-4xl mx-auto w-full px-4 md:px-0">
+
             {/* Autonomous Navigation */}
-            <div className="flex flex-col items-center space-y-3">
+            <div className="flex flex-col items-center space-y-3 min-w-0">
               <div className="p-3 rounded bg-accent">
                 <Navigation className="w-6 h-6 text-accent-foreground" />
               </div>
@@ -60,7 +63,7 @@ const Hero = () => {
             </div>
 
             {/* Geospatial Intelligence Engine */}
-            <div className="flex flex-col items-center space-y-3">
+            <div className="flex flex-col items-center space-y-3 min-w-0">
               <div className="p-3 rounded bg-accent">
                 <Shield className="w-6 h-6 text-accent-foreground" />
               </div>
@@ -73,7 +76,7 @@ const Hero = () => {
             </div>
 
             {/* Real-Time Processing */}
-            <div className="flex flex-col items-center space-y-3">
+            <div className="flex flex-col items-center space-y-3 min-w-0">
               <div className="p-3 rounded bg-accent">
                 <Zap className="w-6 h-6 text-accent-foreground" />
               </div>
@@ -84,6 +87,7 @@ const Hero = () => {
                 for fast performance on edge devices
               </p>
             </div>
+
           </div>
         </div>
       </div>
