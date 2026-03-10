@@ -37,14 +37,14 @@ const Hero = () => {
           </p>
 
           {/* Subheading */}
-          <p className="mt-8 text-l md:text-2xl max-w-3xl mx-auto leading-relaxed pt-8">
+          <p className="mt-8 text-l md:text-2xl max-w-3xl mx-auto -mt-[-250px] leading-relaxed pt-8">
             Solving navigation for drones in GPS-denied environments,
             <br className="hidden md:block" />
             developing an affordable, light, plug-and-play module with AI.
           </p>
 
           {/* Feature highlights */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-16 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 -mt-[-30px] max-w-4xl mx-auto">
             
             {/* Autonomous Navigation */}
             <div className="flex flex-col items-center space-y-3">
