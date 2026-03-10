@@ -13,7 +13,7 @@ const Hero = () => {
         muted
         playsInline
       >
-        <source src="/ZERO TEST FLIGHT EDITv4.mp4" type="video/mp4" />
+        <source src="/ZERO_TEST_FLIGHT_EDITv4.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
